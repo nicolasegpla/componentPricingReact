@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.container-pricing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D0D0D;
+  color: #ffffff;
+
+  & .container-pricing__h3 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  & .container-pricing__div--button {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    & .container-pricing__div--button__p {
+      font-size: .75rem;
+      font-weight: 300;
+    }
+    
+    & .container-pricing__div--button__div--box-false {
+      width: 2.375rem;
+      height: 1.125rem;
+      padding: 0 .125rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #464446;
+      border-radius: .625rem;
+      border: none;
+      
+      & .container-pricing__div--button__div--box__button {
+        width: .875rem;
+        height: .875rem;
+        border-radius: 50%;
+        border: none;
+      }
+    }
+
+    & .container-pricing__div--button__div--box {
+      width: 2.375rem;
+      height: 1.125rem;
+      padding: 0 .125rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #464446;
+      border-radius: .625rem;
+      border: none;
+
+      & .container-pricing__div--button__div--box__button {
+        width: .875rem;
+        height: .875rem;
+        border-radius: 50%;
+        border: none;
+      } 
+    }
+  }
+
+  & .container-pricing__section {
+    
+    height: 23.75rem;
+    margin-top: 3rem;
+    display: flex;
+    
+    & .container-pricing__section__ul {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: .75rem;
+      color: #0D0D0D;
+      margin: 0 1.5rem;
+    }
+  }
+}
+
+@media (width < 860px) {
+   .container-pricing__section {
+    width: 90%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+   
+  }
+}
